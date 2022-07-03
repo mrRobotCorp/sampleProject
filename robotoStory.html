@@ -21,7 +21,7 @@
     <link rel="icon" href="./source/favicon-32x32.png" sizes="32x32" />
     <link rel="apple-touch-icon" href="./source/apple-icon-180x180.png" sizes="180x180" />
 
-    <link rel="stylesheet" type="text/css" href="./css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./css/common.css">
     <link rel="stylesheet" type="text/css" href="./css/menu.css">
     <!-- <link rel="stylesheet" type="text/css" href="./css/main.css"> -->
 
@@ -29,6 +29,8 @@
 </head>
 
 <body>
+    <div id="progressbar" class="progressbar"><div class="progress"></div></div>
+
     <img src="./source/menu3.png" id="menu3">
     <header>
         <h1><a href="./index.html">ESSAY</a></h1>
@@ -49,8 +51,13 @@
     </main>
 
     <footer>
-
+        <div id="scrollTop">
+            <span class="blind">맨 위로 가기</span><div class="topTxt">Top</div>
+        </div>
     </footer>
+
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/common.js"></script>
 </body>
 
 </html>
