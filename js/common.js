@@ -12,18 +12,6 @@ function setProgress() {
     let percentage = (currY / totalY) * 100;//퍼센트 값
     document.querySelector(".progress").style.width = percentage + "%";//프로그래스바 너비 변경
 }
-
-window.onload = function() {
-    // ------------------- hamburger menu -----------------------------
-    var trigerMenu = document.getElementById("menu");
-    var gnbMenu = document.getElementById("gnb");
-
-    trigerMenu.onclick = function(){
-        gnbMenu.style.transition = "all .5s"
-        this.classList.toggle("active");
-        gnbMenu.classList.toggle("active");
-    };
-
     
     // ------------------ scroll Top ------------------------------
     $(document).ready(function(){
@@ -48,4 +36,3 @@ window.onload = function() {
             behavior: 'smooth'
         });
     }
-}

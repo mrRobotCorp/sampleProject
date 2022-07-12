@@ -1,9 +1,9 @@
 
-body { color: #fff; background-color: #000; overflow: hidden;}
-body a { color: #fff; }
+.progressbar { position: fixed; height: 3px; left: 0; width: 100%; z-index: 100; } 
+.progressbar > .progress { width: 0%; /* 프로그래스바 진행 정도 */ height: 100%; transition: width 0.3s ease-out; background-color: #a00; } 
 
 header { position: fixed; top: 0; z-index: 100; width: 100%; } 
-header nav { width: 1400px; display: flex; justify-content: space-between; padding: 25px 0 20px 0; border-bottom: 3px solid #fff; } 
+header nav { width: 1400px; display: flex; justify-content: space-between; padding: 25px 0 20px 0; background-color: rgba(255, 255, 255, 0.689); } 
 header nav h1 { font-size: 27px; letter-spacing: -1px; } 
 
 header nav #gnb { position: absolute; z-index: 150; top: 0; right: 0; height: 100vh; width: 0; background-color: #fff; border-left: 2px solid #949494; overflow: hidden; } 
@@ -28,20 +28,3 @@ button { background-color: transparent; border: none; cursor: pointer; z-index: 
 .menu-trigger.active span:nth-of-type(2) { -webkit-transform: translateY(13px) rotate(-45deg); transform: translateY(13px) rotate(-45deg); } 
 .menu-trigger.active span:nth-of-type(3) { opacity: 0; } 
 .menu-trigger.active span:nth-of-type(4) { -webkit-transform: translateY(-13px) rotate(45deg); transform: translateY(-13px) rotate(45deg); } 
-
-/* -------------------- main ----------------------- */
-main { margin-top: 100px;}
-main .row { width: 1400px; display: flex; justify-content: space-between; font-size: 85px; letter-spacing: 5px; line-height: 160%;}
-main .row .thick { font-weight: bold; transition: all .4s;}
-main .row .thin { font-weight: 400; transition: all .4s;}
-main:hover .thick { font-weight: 400;}
-main:hover .thin { font-weight: bold;}
-
-.row #basic, #space, #form { position: relative; }
-.row #basic::before{ content: "01"; font-size: 17px; color: #ccc; font-weight: 400; position: absolute; top: -52px; left: 5px; }
-.row #space::before{ content: "02"; font-size: 17px; color: #ccc; font-weight: 400; position: absolute; top: -52px; left: 5px; }
-.row #form::before{ content: "_03"; font-size: 17px; color: #ccc; font-weight: 400; position: absolute; top: -52px; left: 5px; }
-
-.row #leaves { content: url(../source/leaves.png); margin-top: -20px;}
-.row #plusFrame { width: 100px; height: 100px; content: url(../source/plusFrame.png); margin-top: 35px; }
-
