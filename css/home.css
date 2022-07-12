@@ -30,7 +30,7 @@ button { background-color: transparent; border: none; cursor: pointer; z-index: 
 .menu-trigger.active span:nth-of-type(4) { -webkit-transform: translateY(-13px) rotate(45deg); transform: translateY(-13px) rotate(45deg); } 
 
 /* -------------------- main ----------------------- */
-main { margin-top: 110px;}
+main { margin-top: 105px;}
 main .row { width: 1400px; display: flex; justify-content: space-between; font-size: 88px; letter-spacing: 3px; line-height: 165%;}
 main .row .thick { font-weight: bold; transition: all .4s;}
 main .row .thin { font-weight: 400; transition: all .4s;}
