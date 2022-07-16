@@ -1,4 +1,4 @@
-@charset "ISO-8859-1";/* ------------------ Reset CSS ---------------------- */
+@charset "ISO-8859-1";/* -------------------- Reset CSS ---------------------- */
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
 form,fieldset,input,textarea,p,blockquote,th,td { padding: 0; margin: 0; } 
 a { text-decoration:none; color: #000; } 
@@ -10,17 +10,53 @@ ol,ul { list-style: none; margin:0; padding:0; }
 caption,th { text-align: left; } 
 abbr,acronym { border: 0; } 
 
-@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);* { font-family: 'Noto Sans KR', sans-serif; text-align: center; } 
+@font-face { font-family: 'notoR'; src: url(../source/NotoSansCJKkr-Regular.otf); } 
+@font-face { font-family: 'notoM'; src: url(../source/NotoSansCJKkr-Medium.otf); }  
+@font-face { font-family: 'notoB'; src: url(../source/NotoSansCJKkr-Bold.otf); } 
+
+body { font-family: 'notoR'; text-align: center; } 
 
 ::-webkit-scrollbar { display: none; } 
+::selection { background-color: #848484; color: #fff; }
+
 .blind { display: none !important; } 
 .wrap { width: 1400px; margin: 0 auto; } 
+.inner { width: 1200px; margin: 0 auto; } 
 
-/* ---------------------------- */
-body .menuImg { width: 85vw; z-index: -100; } 
-body #index0 { width: 100vw; z-index: -100; }
+/* -------------------- header --------------------- */
+header { position: fixed; top: 0; z-index: 100; width: 100%; } 
+header nav { height: 80px; display: flex; justify-content: space-between; align-items: center; padding: 0 5%;  } 
+header nav h1 { font-family: 'notoB'; font-size: 30px; letter-spacing: -1px; } 
 
-footer #copy { font-size: 14px; color: #717171; padding-bottom: 30px; }
+header nav #gnb { position: absolute; z-index: 150; top: 0; right: 0; height: 100vh; width: 0; background-color: #fff; box-shadow: -2px 0 4px #cdcdcd; overflow: hidden; } 
+header nav #gnb.active { width: 35%; } 
+header nav #gnb li { padding: 20px 25px; font-size: 18px; font-weight: 500; } 
+header nav #gnb li:first-child { margin-top: 80px; } 
+header nav #gnb li a { color: #8d8d8d; transition: all .3s; } 
+header nav #gnb li a:hover { color: #000; } 
+
+button { background-color: transparent; border: none; cursor: pointer; z-index: 170; margin-top: 5px; } 
+button:hover span { background-color: #8d8d8d; } 
+
+.menu-trigger,
+.menu-trigger span { transition: all .4s; } 
+
+.menu-trigger { position: relative; width: 32px; height: 30px; float: right; } 
+
+.menu-trigger span { display: block; width: 100%; height: 4px; background-color: #cacaca; border-radius: 4px; position: absolute; left: 0; } 
+.menu-trigger span:nth-of-type(2) { top: 0; } 
+.menu-trigger span:nth-of-type(3) { top: 50%; margin-top: -2px; } 
+.menu-trigger span:nth-of-type(4) { bottom: 0; } 
+
+/* button animation */
+.menu-trigger.active span:nth-of-type(2) { -webkit-transform: translateY(13px) rotate(-45deg); transform: translateY(13px) rotate(-45deg); } 
+.menu-trigger.active span:nth-of-type(3) { opacity: 0; } 
+.menu-trigger.active span:nth-of-type(4) { -webkit-transform: translateY(-13px) rotate(45deg); transform: translateY(-13px) rotate(45deg); } 
+
+/* ------- 디자인 이미지 고정 ------------ */
+body .menuImg { width: 87vw; position: absolute; top: 0; left: 6.5%; z-index: -200; opacity: .5; } 
+
+footer #copy { font-size: 14px; color: #717171; padding-bottom: 30px; } 
 
 /* ------------------ scrollTop ------------------------- */
 #scrollTop { background-color: rgba(255, 255, 255, 0.925); box-shadow: 0px 1.5px 3px #929292; color:#000; align-content: center; width: 53px; height: 53px; border-radius: 50px; text-align: center; font-family:Verdana; font-size: 12px; bottom: 40px; right: 50px; position: fixed; z-index: 3; cursor: pointer; } 
