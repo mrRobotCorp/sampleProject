@@ -1,17 +1,42 @@
-@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);@font-face { font-family: 'NanumBarunGothic'; font-style: normal; font-weight: 400; src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot'); src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf') format('truetype'); } 
+@font-face { font-family: 'NanumBarunGothic'; font-style: normal; font-weight: 400; src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot'); src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf') format('truetype'); } 
+@font-face { font-family: 'notoT'; src: url(../source/NotoSansCJKkr-Thin.otf); } 
+@font-face { font-family: 'notoL'; src: url(../source/NotoSansCJKkr-Light.otf); } 
+@font-face { font-family: 'notoD'; src: url(../source/NotoSansCJKkr-DemiLight.otf); } 
+@font-face { font-family: 'notoBlack'; src: url(../source/NotoSansCJKkr-Black.otf); } 
 
-#storyMain { height: 850px; }
+.mainBanner { height: 850px; } 
 
-section h2 { font-size: 35px; text-align: left; }
+section h2 { font-size: 35px; text-align: left; } 
 
-#gothicStory { height: 450px; }
-#gothicStory h2 { margin-bottom: 25px; }
-#gothicStory article { font-size: 17px; float: left; width: 580px; text-align: left; line-height: 170%; }
-#gothicStory > div { font-size: 34px; font-family: 'notoB'; padding-top: 30px;}
-#gothicStory > div span { display:inline-block; width: 75px; border-top: 3px solid #000; margin: 0 9px 9px 9px;}
+#section0 { height: 450px; } 
+#section0 h2 { margin-bottom: 25px; } 
+#section0 article { font-size: 17px; float: left; width: 580px; text-align: left; line-height: 170%; } 
+#section0 > div { font-size: 35px; font-family: 'notoB'; padding-top: 30px; } 
+#section0 > div span { display:inline-block; width: 75px; border-top: 3px solid #000; margin: 0 9px 9px 9px; } 
 
-#notoInfo h2 { clear: both; margin-bottom: 25px; }
-#notoInfo article h3 { font-size: 22px; float: left; border-bottom: 3px solid #000; border-width: 50%; padding-bottom: 15px; margin-top: -10px; }
-#notoInfo article p { font-size: 17px; float: right; width: 580px; text-align: left; line-height: 170%; margin-bottom: 20px; }
-#notoInfo article #notoTxt0 { margin: 15px 0 30px 0; }
-#notoInfo article #notoSketch { float: left;}
+#section1 article { display: flex; justify-content: space-between; margin-bottom: 120px; } 
+#section1 article h3 { font-size: 22px; border-bottom: 3px solid #000; padding-bottom: 15px; text-align: left; } 
+article p { font-size: 17px; text-align: left; line-height: 170%; } 
+
+#section1 h2 { clear: both; margin-bottom: 25px; } 
+#section1 p { margin-top: 16px; } 
+#section1 article #notoInfo { width: 580px; } 
+#section1 article #notoTxt0 { margin-bottom: 30px; } 
+
+#section1 article #singleWord { border-collapse:collapse; width: 575px; height: 419px; } 
+#section1 article #singleWord tr td { font-size: 90px; border: 2px solid #b7b7b7; } 
+#section1 article .wordInfo { display: inline-block; width: 264px; } 
+#section1 article #notoSketch { margin-top: 50px; }
+
+#section2 article { display: flex; justify-content: space-between; align-items: flex-end; } 
+#section2 article p { width: 264px; } 
+#section2 article table { border: 2px solid #b7b7b7; border-width: 2px 0; width: 892px; height: 570px; } 
+#section2 article table tr { height: 14%; } 
+#section2 article table td { font-size: 18px; } 
+#section2 article table .thickness { font-size: 38px; } 
+#section2 article table #thin { font-family: 'notoT'; } 
+#section2 article table #light { font-family: 'notoL'; } 
+#section2 article table #demlight { font-family: 'notoD'; } 
+#section2 article table #medium { font-family: 'notoM'; } 
+#section2 article table #bold { font-family: 'notoB'; } 
+#section2 article table #black { font-family: 'notoBlack'; } 
