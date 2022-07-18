@@ -13,7 +13,7 @@ function setProgress() {
     document.querySelector(".progress").style.width = percentage + "%";//프로그래스바 너비 변경
 }
 
-// ------------------- section2 text ----------------------
+// ------------------- innertext ----------------------
 const thickness = document.querySelectorAll(".thickness");
 
 thickness.forEach(function (txt0) {
@@ -25,6 +25,11 @@ const otherFont = document.querySelectorAll(".others");
 otherFont.forEach(function (txt1) {
     txt1.innerText = "반듯한 고딕으로 써 본 아름다운 한글";
 })
+
+document.querySelector("#bonBtn").innerText = "본고딕";
+document.querySelector("#nanumBtn").innerText = "나눔바른고딕";
+document.querySelector("#neoBtn").innerText = "산돌고딕네오1";
+
 
 
 

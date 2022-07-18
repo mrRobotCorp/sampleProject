@@ -6,17 +6,17 @@ header .line { display: block; border-bottom: 2px solid #fff; margin: 0 4%;}
 
 /* -------------------- main ----------------------- */
 main { margin-top: 105px;}
-main .row { width: 1400px; display: flex; justify-content: space-between; font-size: 88px; letter-spacing: 3px; line-height: 165%;}
-main .row .thick { font-weight: bold; transition: all .4s;}
-main .row .thin { font-weight: 400; transition: all .4s;}
-main:hover .thick { font-weight: 400;}
-main:hover .thin { font-weight: bold;}
+main .row { width: 1400px; display: flex; justify-content: space-between; font-size: 88px; line-height: 165%;}
+main .row .thick { font-weight: bold; transition: all .4s; letter-spacing: 4px; }
+main .row .thin { font-weight: 400; transition: all .4s; letter-spacing: 2px;}
+main:hover .thick { font-weight: 400; letter-spacing: 2px;}
+main:hover .thin { font-weight: bold; letter-spacing: 4px;}
 
 .row #basic, #space, #form { position: relative; }
 .row #basic::before{ content: "01"; font-size: 17px; color: #ccc; font-weight: 400; position: absolute; top: -52px; left: 5px; }
 .row #space::before{ content: "02"; font-size: 17px; color: #ccc; font-weight: 400; position: absolute; top: -52px; left: 5px; }
 .row #form::before{ content: "_03"; font-size: 17px; color: #ccc; font-weight: 400; position: absolute; top: -52px; left: 5px; }
 
-.row #leaves { content: url(../source/leaves.png); margin-top: -20px;}
-.row #plusFrame { width: 100px; height: 100px; content: url(../source/plusFrame.png); margin-top: 35px; }
+.row #leaves { content: url(../source/leaves.svg); }
+.row #plusFrame { width: 90px; height: 91px; content: url(../source/plusFrame.png); margin-top: 35px; }
 
