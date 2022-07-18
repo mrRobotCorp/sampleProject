@@ -1,4 +1,4 @@
-@charset "ISO-8859-1";/* -------------------- Reset CSS ---------------------- */
+@charset "ISO-8859-1"; /* -------------------- Reset CSS ---------------------- */
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
 form,fieldset,input,textarea,p,blockquote,th,td { padding: 0; margin: 0; } 
 a { text-decoration:none; color: #000; } 
@@ -11,21 +11,35 @@ caption,th { text-align: left; }
 abbr,acronym { border: 0; } 
 
 @font-face { font-family: 'notoR'; src: url(../source/NotoSansCJKkr-Regular.otf); } 
-@font-face { font-family: 'notoM'; src: url(../source/NotoSansCJKkr-Medium.otf); }  
+@font-face { font-family: 'notoM'; src: url(../source/NotoSansCJKkr-Medium.otf); } 
 @font-face { font-family: 'notoB'; src: url(../source/NotoSansCJKkr-Bold.otf); } 
 
 body { font-family: 'notoR'; text-align: center; } 
 
 ::-webkit-scrollbar { display: none; } 
-::selection { background-color: #6e6e6e; color: #fff; }
+::selection { background-color: #6e6e6e; color: #fff; } 
 
 .blind { display: none !important; } 
 .wrap { width: 1400px; margin: 0 auto; } 
 .inner { width: 1200px; margin: 0 auto; } 
 
+@keyframes load { 
+    0% { 
+        opacity: 0.08; 
+        filter: blur(5px); 
+        letter-spacing: 6px; } 
+
+    100% { 
+        letter-spacing: 3px;
+    } 
+}
+
+.loader { background-color: #111; color: white; z-index: 1000; width: 100vw; height: 100vh; position: fixed; top: 0;} 
+.animate { font-size: 20px; font-family: 'notoB'; display: flex; justify-content: center; align-items: center; height:100%; margin: auto; animation: load 1.2s infinite 0s ease-in-out; animation-direction: alternate;text-shadow: 0 0 1px white; } 
+
 /* -------------------- header --------------------- */
 header { position: fixed; top: 0; z-index: 100; width: 100%; } 
-header nav { height: 80px; display: flex; justify-content: space-between; align-items: center; padding: 0 5%;  } 
+header nav { height: 80px; display: flex; justify-content: space-between; align-items: center; padding: 0 5%; } 
 header nav h1 { font-family: 'notoB'; font-size: 30px; letter-spacing: -1px; } 
 
 header nav #gnb { position: absolute; z-index: 150; top: 0; right: 0; height: 100vh; width: 0; background-color: #fff; box-shadow: -2px 0 4px #cdcdcd; overflow: hidden; } 

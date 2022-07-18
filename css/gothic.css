@@ -67,7 +67,7 @@ section .infoTxt { font-size: 17px; text-align: justify; line-height: 170%; }
 #section4 .allWordLine .wordLine .word2 { background: url(../source/s4_word2.svg); }
 
 #section5 article { display: flex; justify-content: space-between; align-items: flex-end; }
-#section5 article h2 { margin-bottom: 80px; }
+#section5 article h2 { margin-bottom: 70px; }
 #section5 article p { width: 270px; }
 #section5 .s5_row { margin-top: 50px; }
 #section5 .s5_col0 { font-size: 14px; color: #666; text-align: left; display: inline-block; width: 180px; }
@@ -78,7 +78,7 @@ section .infoTxt { font-size: 17px; text-align: justify; line-height: 170%; }
 #section6 article { width: 580px; }
 #section6 article#s6_con0 { padding: 60px 0 200px 0;}
 #section6 article#s6_con1 { padding-bottom: 130px; }
-#section6 article h2 { margin-bottom: 70px; }
+#section6 article h2 { margin-bottom: 60px; }
 #section6 #hgPoster { float: right; pointer-events: none; }
 
 footer { padding-bottom: 40px; }

@@ -8,4 +8,7 @@ window.onload = function() {
         this.classList.toggle("active");
         gnbMenu.classList.toggle("active");
     };
+
+    document.querySelector(".loader").style.display = "none";
+
 }

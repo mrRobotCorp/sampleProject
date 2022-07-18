@@ -13,6 +13,7 @@ function setProgress() {
     document.querySelector(".progress").style.width = percentage + "%";//프로그래스바 너비 변경
 }
 
+
 // ------------------- innertext ----------------------
 const thickness = document.querySelectorAll(".thickness");
 
