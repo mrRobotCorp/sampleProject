@@ -15,6 +15,7 @@ section .infoTxt { font-size: 17px; text-align: justify; line-height: 170%; }
 #section0 > div { font-size: 35px; font-family: 'notoB'; padding-top: 30px; } 
 #section0 > div span { display: inline-block; width: 75px; border-top: 3px solid #000; margin: 0 9px 9px 9px; } 
 
+/* ---------------------------------------------------------------- */
 #section1 article { display: flex; justify-content: space-between; margin-bottom: 190px; } 
 #section1 article h3 { font-size: 22px; border-bottom: 3px solid #000; padding-bottom: 15px; text-align: left; } 
 
@@ -29,6 +30,7 @@ section .infoTxt { font-size: 17px; text-align: justify; line-height: 170%; }
 #section1 article .wordInfo { display: inline-block; width: 264px; } 
 #section1 article #notoSketch { margin-top: 50px; } 
 
+/* ---------------------------------------------------------------- */
 #section2 article { display: flex; justify-content: space-between; align-items: flex-end; } 
 #section2 article h2 { margin-bottom: 150px; }
 #section2 article p { width: 274px; } 
@@ -43,21 +45,36 @@ section .infoTxt { font-size: 17px; text-align: justify; line-height: 170%; }
 #section2 table #bold { font-family: 'notoB'; } 
 #section2 table #black { font-family: 'notoBlack'; } 
 
+/* ---------------------------------------------------------------- */
 #darkBanner { width: 100vw; background-color: #000; margin: 160px 0; padding-top: 50px; }
 #darkBanner .b_row { color: #fff; font-size: 65px; font-family: 'notoB'; text-align: justify; margin-top: -70px;}
 #darkBanner .b_row::after { content: ''; width: 100%; display: inline-block; }
 #darkBanner .b_row:first-child { padding-top: 70px;}
 
+/* ---------------------------------------------------------------- */
 #section3 article { text-align: left; margin-top: 20px; } 
 #section3 .others { font-size: 68px; float: left; line-height: 100%; margin-left: 35px; } 
 #section3 .s3_row { width: 100%; padding: 65px 0; } 
 #section3 .nanum { font-family: 'nanum' } 
 #section3 .s3_row .s3_col0 { font-size: 14px; width: 130px; color: #999; float: left; } 
 
+/* ---------------------------------------------------------------- */
 #section4 { background-color: #1F1F1F; padding: 60px 0; margin: 220px 0; }
-#section4 #allBtn #bonBtn { color: #fff; }
-#section4 #allBtn #nanumBtn { color: #00FF85; }
-#section4 #allBtn #neoBtn { color: #9896FF; }
+#section4 #allBtn { display: flex; justify-content: space-between; width: 500px; margin-bottom: 50px; }
+#section4 #allBtn div { display: flex; align-items: flex-end; }
+#section4 #allBtn div#btn0 { color: #fff; }
+#section4 #allBtn div#btn1 { color: #00FF85; }
+#section4 #allBtn div#btn2 { color: #9896ff; }
+#section4 #allBtn div p { margin-left: 10px; }
+#section4 #allBtn input { display: none; }
+#section4 #allBtn label { width: 17px; height: 17px; border-radius: 50%; background-color: transparent; cursor: pointer; } 
+
+#section4 #allBtn #bonBtn + label { border: 2px solid #fff; transition: all .2s; }
+#section4 #allBtn #bonBtn:checked + label { background-color: #fff; }
+#section4 #allBtn #nanumBtn + label { border: 2px solid #00ff85; transition: all .2s;}
+#section4 #allBtn #nanumBtn:checked + label { background-color: #00ff85; }
+#section4 #allBtn #neoBtn + label { border: 2px solid #9896ff; transition: all .2s;}
+#section4 #allBtn #neoBtn:checked + label { background-color: #9896ff; }
 
 #section4 .allWordLine { display: flex; justify-content: space-between;}
 #section4 .allWordLine .wordLine p { color: #fff; width: 350px; padding: 20px 0 0 10px; }
@@ -66,6 +83,7 @@ section .infoTxt { font-size: 17px; text-align: justify; line-height: 170%; }
 #section4 .allWordLine .wordLine .word1 { background: url(../source/s4_word1.svg); }
 #section4 .allWordLine .wordLine .word2 { background: url(../source/s4_word2.svg); }
 
+/* ---------------------------------------------------------------- */
 #section5 article { display: flex; justify-content: space-between; align-items: flex-end; }
 #section5 article h2 { margin-bottom: 70px; }
 #section5 article p { width: 270px; }
@@ -74,6 +92,7 @@ section .infoTxt { font-size: 17px; text-align: justify; line-height: 170%; }
 #section5 .s5_c1r0::after { content: url(../source/s5_row0.svg); }
 #section5 .s5_c1r1::after { content: url(../source/s5_row1.svg); }
 
+/* ---------------------------------------------------------------- */
 #section6 { margin-top: 200px; }
 #section6 article { width: 580px; }
 #section6 article#s6_con0 { padding: 60px 0 200px 0;}
