@@ -21,7 +21,6 @@ section .infoTxt { font-size: 17px; text-align: justify; line-height: 170%; }
 
 #section1 h2 { clear: both; margin-bottom: 25px; } 
 #section1 p { margin-top: 16px; }
-/* #section1 article #notoSketch { pointer-events: none; } */
 #section1 article #notoInfo { width: 580px; } 
 #section1 article #notoTxt0 { margin-bottom: 30px; } 
 

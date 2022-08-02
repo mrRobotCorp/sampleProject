@@ -24,22 +24,17 @@ body { font-family: 'notoR'; text-align: center; }
 .inner { width: 1200px; margin: 0 auto; } 
 
 @keyframes load { 
-    0% { 
-        opacity: 0.08; 
-        filter: blur(5px); 
-        letter-spacing: 6px; } 
+0% { opacity: 0.08; filter: blur(5px); letter-spacing: 6px; } 
 
-    100% { 
-        letter-spacing: 3px;
-    } 
+100% { letter-spacing: 3px; } 
 }
 
-.loader { background-color: #111; color: white; z-index: 1000; width: 100vw; height: 100vh; position: fixed; top: 0;} 
-.animate { font-size: 20px; font-family: 'notoB'; display: flex; justify-content: center; align-items: center; height:100%; margin: auto; animation: load 1.2s infinite 0s ease-in-out; animation-direction: alternate;text-shadow: 0 0 1px white; } 
+.loader { background-color: #111; color: white; z-index: 1000; width: 100vw; height: 100vh; position: fixed; top: 0; } 
+.animate { font-size: 20px; font-family: 'notoB'; display: flex; justify-content: center; align-items: center; height:100%; margin: auto; animation: load 1.2s infinite 0s ease-in-out; animation-direction: alternate; text-shadow: 0 0 1px white; } 
 
 /* -------------------- header --------------------- */
 header { position: fixed; top: 0; z-index: 100; width: 100%; } 
-header nav { height: 80px; display: flex; justify-content: space-between; align-items: center; padding: 0 5%; } 
+header nav { height: 75px; display: flex; justify-content: space-between; align-items: center; padding: 0 5%; } 
 header nav h1 { font-family: 'notoB'; font-size: 30px; letter-spacing: -1px; } 
 
 header nav #gnb { position: absolute; z-index: 150; top: 0; right: 0; height: 100vh; width: 0; background-color: #fff; box-shadow: -2px 0 4px #cdcdcd; overflow: hidden; } 
@@ -49,23 +44,20 @@ header nav #gnb li:first-child { margin-top: 70px; }
 header nav #gnb li a { color: #8d8d8d; transition: all .3s; } 
 header nav #gnb li a:hover { color: #000; } 
 
-button { background-color: transparent; border: none; cursor: pointer; z-index: 170; margin-top: 5px; } 
-button:hover span { background-color: #8d8d8d; } 
+.menu-trigger { width: 25px; height: 20.5px; background-color: transparent; border: none; position: relative; cursor: pointer; z-index: 170; display: inline-block; } 
+.menu-trigger span { background-color:#bebebe; position: absolute; border-radius: 2px; transition: .3s cubic-bezier(.8, .5, .2, 1.4); width:100%; height: 3px; transition-duration: 500ms}
+.menu-trigger:hover span { background-color: #8d8d8d; }
 
-.menu-trigger,
-.menu-trigger span { transition: all .4s; } 
+.menu-trigger span:nth-child(2) { top: 0px; left: 0px; } 
+.menu-trigger span:nth-child(3) { top: 9px; left: 0px; opacity: 1; } 
+.menu-trigger span:nth-child(4) { bottom: 0px; left: 0px; } 
 
-.menu-trigger { position: relative; width: 32px; height: 30px; float: right; } 
-
-.menu-trigger span { display: block; width: 100%; height: 4px; background-color: #cacaca; border-radius: 4px; position: absolute; left: 0; } 
-.menu-trigger span:nth-of-type(2) { top: 0; } 
-.menu-trigger span:nth-of-type(3) { top: 50%; margin-top: -2px; } 
-.menu-trigger span:nth-of-type(4) { bottom: 0; } 
-
-/* button animation */
-.menu-trigger.active span:nth-of-type(2) { -webkit-transform: translateY(13px) rotate(-45deg); transform: translateY(13px) rotate(-45deg); } 
-.menu-trigger.active span:nth-of-type(3) { opacity: 0; } 
-.menu-trigger.active span:nth-of-type(4) { -webkit-transform: translateY(-13px) rotate(45deg); transform: translateY(-13px) rotate(45deg); } 
+.menu-trigger:not(.open):hover span:nth-child(2) { transform: rotate(6deg) scaleY(1.1); } 
+.menu-trigger:not(.open):hover span:nth-child(3) { transform: rotate(-4deg) scaleY(1.1); } 
+.menu-trigger:not(.open):hover span:nth-child(4) { transform: rotate(6deg) scaleY(1.1); } 
+.menu-trigger.open span:nth-child(2) { transform: rotate(45deg); top: 13px; } 
+.menu-trigger.open span:nth-child(3) { opacity:0; } 
+.menu-trigger.open span:nth-child(4) { transform: rotate(-45deg); top: 13px; } 
 
 /* ------- 디자인 이미지 고정 ------------ */
 body .menuImg { width: 87vw; position: absolute; top: 0; left: 6.5%; z-index: -200; opacity: .5; } 

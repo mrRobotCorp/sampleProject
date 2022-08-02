@@ -1,4 +1,4 @@
 .progressbar { position: fixed; height: 3px; left: 0; width: 100%; z-index: 100; } 
 .progressbar > .progress { width: 0%; /* 프로그래스바 진행 정도 */ height: 100%; transition: width 0.3s ease-out; background-color: #a00; } 
 
-header nav { background-color: rgba(255, 255, 255, 0.689); }
+header nav { background-color: rgba(255, 255, 255, 0.776); }
