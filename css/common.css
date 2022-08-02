@@ -17,7 +17,7 @@ abbr,acronym { border: 0; }
 body { font-family: 'notoR'; text-align: center; } 
 
 ::-webkit-scrollbar { display: none; } 
-::selection { background-color: #6e6e6e; color: #fff; } 
+::selection { background-color: #535353; color: #fff; } 
 
 .blind { display: none !important; } 
 .wrap { width: 1400px; margin: 0 auto; } 

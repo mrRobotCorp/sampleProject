@@ -21,7 +21,7 @@ section .infoTxt { font-size: 17px; text-align: justify; line-height: 170%; }
 
 #section1 h2 { clear: both; margin-bottom: 25px; } 
 #section1 p { margin-top: 16px; }
-#section1 article #notoSketch { pointer-events: none; }
+/* #section1 article #notoSketch { pointer-events: none; } */
 #section1 article #notoInfo { width: 580px; } 
 #section1 article #notoTxt0 { margin-bottom: 30px; } 
 
@@ -98,7 +98,7 @@ section .infoTxt { font-size: 17px; text-align: justify; line-height: 170%; }
 #section6 article#s6_con0 { padding: 60px 0 200px 0;}
 #section6 article#s6_con1 { padding-bottom: 130px; }
 #section6 article h2 { margin-bottom: 60px; }
-#section6 #hgPoster { float: right; pointer-events: none; }
+#section6 #hgPoster { float: right; }
 
 footer { padding-bottom: 40px; }
 footer p { color: #ababab; font-size: 13px; }
