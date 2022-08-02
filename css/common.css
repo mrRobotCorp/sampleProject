@@ -66,7 +66,7 @@ header nav #gnb li a:hover:after { width: 100%; }
 body .menuImg { width: 87vw; position: absolute; top: 0; left: 6.5%; z-index: -200; opacity: .5; } 
 
 /* ------------------ scrollTop ------------------------- */
-#scrollTop { background-color: rgba(255, 255, 255, 0.925); box-shadow: 0px 1.5px 3px #929292; color:#000; align-content: center; width: 53px; height: 53px; border-radius: 50px; text-align: center; font-family:Verdana; font-size: 12px; bottom: 40px; right: 50px; position: fixed; z-index: 3; cursor: pointer; } 
+#scrollTop { background-color: rgba(255, 255, 255, 0.925); box-shadow: 0px 1.5px 3px #929292; color:#000; align-content: center; width: 50px; height: 50px; border-radius: 50px; text-align: center; font-size: 12px; bottom: 40px; right: 50px; position: fixed; z-index: 3; cursor: pointer; } 
 #scrollTop:hover { transition: 0.5s ease; background-color: #dededee9; } 
-#scrollTop::before { content: "\2303"; position: absolute; width: 50px; top: 7px; left: 1px; color: #000; font-size: 18px; } 
-#scrollTop .topTxt { display: block; margin-top: 21px; font-size: 12px; } 
+#scrollTop::before { content: "\2303"; position: absolute; width: 50px; top: 7px; left: 0; color: #000; font-size: 18px; } 
+#scrollTop .topTxt { display: block; margin-top: 21px; font-size: 11px; } 

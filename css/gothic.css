@@ -99,5 +99,5 @@ section .infoTxt { font-size: 17px; text-align: justify; line-height: 170%; }
 #section6 article h2 { margin-bottom: 60px; }
 #section6 #hgPoster { float: right; }
 
-footer { padding-bottom: 40px; }
+footer { padding-bottom: 30px; }
 footer p { color: #ababab; font-size: 13px; }
