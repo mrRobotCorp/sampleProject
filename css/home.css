@@ -7,8 +7,8 @@ header .line { display: block; border-bottom: 2px solid #fff; margin: 0 4%;}
 /* -------------------- main ----------------------- */
 main { margin-top: 105px; cursor: default;}
 main .row { width: 1400px; display: flex; justify-content: space-between; font-size: 85px; line-height: 150%;}
-main .row .thick { font-family: 'notoB'; transition: .4s cubic-bezier(0.71, 0.57, 0.76, 1.14); letter-spacing: 4px; }
-main .row .thin { font-family: 'notoR'; transition: .4s cubic-bezier(0.71, 0.57, 0.76, 1.14); letter-spacing: 2px;}
+main .row .thick { font-family: 'notoB'; transition: .5s cubic-bezier(0.46, 0.78, 0.56, 1.06); letter-spacing: 4px; }
+main .row .thin { font-family: 'notoR'; transition: .5s cubic-bezier(0.46, 0.78, 0.56, 1.06); letter-spacing: 2px;}
 
 .row1:hover .thick { font-family: 'notoR'; letter-spacing: 2px;}
 .row1:hover .thin { font-family: 'notoB'; letter-spacing: 4px;}
