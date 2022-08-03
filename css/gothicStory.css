@@ -18,7 +18,7 @@ section .infoTxt { font-size: 17px; text-align: justify; line-height: 170%; }
 #section1 article #notoInfo { width: 580px; } 
 #section1 article #notoTxt0 { margin-bottom: 30px; } 
 
-#section1 article #singleWord { border-collapse:collapse; width: 575px; height: 419px; } 
+#section1 article #singleWord { border-collapse:collapse; width: 575px; height: 419px; cursor: default; } 
 #section1 article #singleWord tr td { font-size: 90px; border: 2px solid #b7b7b7; } 
 #section1 article .wordInfo { display: inline-block; width: 264px; } 
 #section1 article #notoSketch { margin-top: 50px; } 
@@ -39,14 +39,14 @@ section .infoTxt { font-size: 17px; text-align: justify; line-height: 170%; }
 #section2 table #black { font-family: 'notoBlack'; } 
 
 /* ---------------------------------------------------------------- */
-#darkBanner { width: 100vw; background-color: #000; margin: 200px 0; padding-top: 50px; }
+#darkBanner { width: 100vw; background-color: #000; margin: 200px 0; padding-top: 50px; cursor: default; }
 #darkBanner .b_row { color: #fff; font-size: 65px; font-family: 'notoB'; text-align: justify; margin-top: -70px;}
 #darkBanner .b_row::after { content: ''; width: 100%; display: inline-block; }
 #darkBanner .b_row:first-child { padding-top: 70px;}
 
 /* ---------------------------------------------------------------- */
 #section3 article { text-align: left; margin-top: 20px; } 
-#section3 .others { font-size: 68px; float: left; line-height: 100%; margin-left: 35px; } 
+#section3 .others { font-size: 68px; float: left; line-height: 100%; margin-left: 35px; cursor: default; } 
 #section3 .s3_row { width: 100%; padding: 65px 0; } 
 #section3 .nanum { font-family: 'nanum' } 
 #section3 .s3_row .s3_col0 { font-size: 14px; width: 130px; color: #999; float: left; } 

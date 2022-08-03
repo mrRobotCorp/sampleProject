@@ -65,7 +65,7 @@
     <section id="section0">
         <h2>글자와 글자 사이</h2>
         <p class="infoTxt">
-            기본 자간 0 을 기준으로 줄여보거나 늘려본 결과  넓히는 쪽이 더 보기 편안하다. 
+            기본 자간 0 을 기준으로 줄여보거나 늘려본 결과  넓히는 쪽이 더 보기 편안하다. <br>
             많은 양의 텍스트를 적게되면 최소 1로  좀 더 시원한 가독성이 중시되면 최대 2.5 까지 늘려 보는 것도 좋다.
         </p>
         <article>
@@ -94,17 +94,50 @@
         <h2 class="blind"></h2>
         <article>
             <h3>본고딕 regular 48pt</h3>
-            <div class="s1_row s1_r1"></div>
-            <div class="s1_row s1_r2"></div>
-            <div class="s1_row s1_r3"></div>
-            <div class="s1_row s1_r4"></div>
+            <div>
+                <div class="s1_row s1_r1"></div>
+                <p>자간 - 3</p>
+            </div>
+            <div>
+                <div class="s1_row s1_r2"></div>
+                <p>자간 - 0</p>
+            </div>
+            <div>
+                <div class="s1_row s1_r3"></div>
+                <p>자간 - 2.5</p>
+            </div>
+            <div>
+                <div class="s1_row s1_r4"></div>
+                <p>자간 - 5</p>
+            </div>
         </article>
     </section>
 
     <section id="section2">
-        <h2></h2>
+        <h2>행간의 간격</h2>
         <article>
-            <h3></h3>
+            <h3 class="blind"></h3>
+            <p class="infoTxt">
+                Auto도 안정적으로 보이긴했지만 행간이 적절한 계산 폰트사이즈 x 1.5~1.75인 경우로해서 각각 적용해봤다. 
+                폰트 사이즈 24를 기준으로 했을 때 개인적으로  1.5를 곱해서 나온 행간 42로 적용한 것이 보기 편한것 같다.
+            </p>
+            <div id="s2_content">
+                <div class="s2_row">
+                    <div class="s2_col0">본고딕<br>24pt<br>auto</div>
+                    <span></span>
+                    <span class="s2_line line0"></span> 
+                </div>
+                <div class="s2_row">
+                    <div class="s2_col0">본고딕<br>24pt<br>36</div>
+                    <span></span>
+                    <span class="s2_line line1"></span> 
+                </div>
+                <div class="s2_row">
+                    <div class="s2_col0">본고딕<br>24pt<br>42</div>
+                    <span></span>
+                    <span class="s2_line line2"></span> 
+                </div>
+            </div>
         </article>
     </section>
 
