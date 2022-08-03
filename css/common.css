@@ -10,9 +10,14 @@ ol,ul { list-style: none; margin:0; padding:0; }
 caption,th { text-align: left; } 
 abbr,acronym { border: 0; } 
 
+@font-face { font-family: 'notoT'; src: url(../source/NotoSansCJKkr-Thin.otf); }
+@font-face { font-family: 'notoL'; src: url(../source/NotoSansCJKkr-Light.otf); } 
+@font-face { font-family: 'notoD'; src: url(../source/NotoSansCJKkr-DemiLight.otf); } 
 @font-face { font-family: 'notoR'; src: url(../source/NotoSansCJKkr-Regular.otf); } 
 @font-face { font-family: 'notoM'; src: url(../source/NotoSansCJKkr-Medium.otf); } 
 @font-face { font-family: 'notoB'; src: url(../source/NotoSansCJKkr-Bold.otf); } 
+@font-face { font-family: 'notoBlack'; src: url(../source/NotoSansCJKkr-Black.otf); } 
+@font-face { font-family: 'nanum'; src: url(../source/NanumBarunGothic.ttf); } 
 
 body { font-family: 'notoR'; text-align: center; } 
 
@@ -63,6 +68,7 @@ header nav #gnb li a:hover:after { width: 100%; }
 .menu-trigger.open span:nth-child(4) { transform: rotate(-45deg); top: 13px; } 
 
 /* ------- 디자인 이미지 고정 ------------ */
+section { margin: 0 auto; }
 body .menuImg { width: 87vw; position: absolute; top: 0; left: 6.5%; z-index: -200; opacity: .5; } 
 
 /* ------------------ scrollTop ------------------------- */
