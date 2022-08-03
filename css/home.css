@@ -5,12 +5,17 @@ body a { color: #fff; }
 header .line { display: block; border-bottom: 2px solid #fff; margin: 0 4%;}
 
 /* -------------------- main ----------------------- */
-main { margin-top: 105px;}
-main .row { width: 1400px; display: flex; justify-content: space-between; font-size: 88px; line-height: 165%;}
-main .row .thick { font-weight: bold; transition: all .4s; letter-spacing: 4px; }
-main .row .thin { font-weight: 400; transition: all .4s; letter-spacing: 2px;}
-main:hover .thick { font-weight: 400; letter-spacing: 2px;}
-main:hover .thin { font-weight: bold; letter-spacing: 4px;}
+main { margin-top: 105px; cursor: default;}
+main .row { width: 1400px; display: flex; justify-content: space-between; font-size: 85px; line-height: 150%;}
+main .row .thick { font-family: 'notoB'; transition: .4s cubic-bezier(0.71, 0.57, 0.76, 1.14); letter-spacing: 4px; }
+main .row .thin { font-family: 'notoR'; transition: .4s cubic-bezier(0.71, 0.57, 0.76, 1.14); letter-spacing: 2px;}
+
+.row1:hover .thick { font-family: 'notoR'; letter-spacing: 2px;}
+.row1:hover .thin { font-family: 'notoB'; letter-spacing: 4px;}
+.row2:hover .thick { font-family: 'notoR'; letter-spacing: 2px;}
+.row2:hover .thin { font-family: 'notoB'; letter-spacing: 4px;}
+.row3:hover .thick { font-family: 'notoR'; letter-spacing: 2px;}
+.row3:hover .thin { font-family: 'notoB'; letter-spacing: 4px;}
 
 .row #basic, #space, #form { position: relative; }
 .row #basic::before{ content: "01"; font-size: 17px; color: #ccc; font-weight: 400; position: absolute; top: -52px; left: 5px; }
