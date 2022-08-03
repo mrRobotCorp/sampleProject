@@ -16,7 +16,18 @@ section .infoTxt { font-size: 17px; text-align: justify; line-height: 170%; }
 #section0 article .space5 { letter-spacing: 0.05em; }
 
 /* ---------------------------------------------------------------- */
-#section1 { background-color: #3F3E4A; }
+#section1 { background-color: #3F3E4A;  text-align: left; margin: 200px 0; padding: 70px 0; }
+#section1 article { width: 1200px; color: #fff; margin: 0 auto; }
+#section1 article h3 { font-size: 16px; font-weight: normal; margin-bottom: 50px; }
+#section1 article .s1_row { font-size: 48px; border: 2px dashed #fff; border-width: 2px 0; margin-bottom: 30px; line-height: 80%; user-select: none;  }
+
+#section1 article .s1_r1 { letter-spacing: -0.035em; }
+#section1 article .s1_r1::after { content: '자간 - 3'; display: block; color: #979797; font-size: 14px; }
+#section1 article .s1_r2::after { content: '자간 - 0'; display: block; color: #979797; font-size: 14px; }
+#section1 article .s1_r3 { letter-spacing: 0.025em; }
+#section1 article .s1_r3::after { content: '자간 - 2.5'; display: block; color: #979797; font-size: 14px; }
+#section1 article .s1_r4 { letter-spacing: 0.05em; }
+#section1 article .s1_r4::after { content: '자간 - 5'; display: block; color: #979797; font-size: 14px; }
 
 /* ---------------------------------------------------------------- */
 footer { padding-bottom: 30px; }

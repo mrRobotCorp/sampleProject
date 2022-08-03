@@ -10,7 +10,7 @@ section .infoTxt { font-size: 17px; text-align: justify; line-height: 170%; }
 #section0 > div span { display: inline-block; width: 75px; border-top: 3px solid #000; margin: 0 9px 9px 9px; } 
 
 /* ---------------------------------------------------------------- */
-#section1 article { display: flex; justify-content: space-between; margin-bottom: 190px; } 
+#section1 article { display: flex; justify-content: space-between; margin-bottom: 200px; } 
 #section1 article h3 { font-size: 22px; border-bottom: 3px solid #000; padding-bottom: 15px; text-align: left; } 
 
 #section1 h2 { clear: both; margin-bottom: 25px; } 
@@ -39,7 +39,7 @@ section .infoTxt { font-size: 17px; text-align: justify; line-height: 170%; }
 #section2 table #black { font-family: 'notoBlack'; } 
 
 /* ---------------------------------------------------------------- */
-#darkBanner { width: 100vw; background-color: #000; margin: 160px 0; padding-top: 50px; }
+#darkBanner { width: 100vw; background-color: #000; margin: 200px 0; padding-top: 50px; }
 #darkBanner .b_row { color: #fff; font-size: 65px; font-family: 'notoB'; text-align: justify; margin-top: -70px;}
 #darkBanner .b_row::after { content: ''; width: 100%; display: inline-block; }
 #darkBanner .b_row:first-child { padding-top: 70px;}
