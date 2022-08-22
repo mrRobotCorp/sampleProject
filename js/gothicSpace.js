@@ -1,4 +1,4 @@
-window.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
     const s0 = document.querySelectorAll('.s0_space'); 
     const s1 = document.querySelectorAll('.s1_row');
     const s2 = document.querySelectorAll('.s2_line');
